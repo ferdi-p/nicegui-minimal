@@ -1,4 +1,4 @@
-app = "your-unique-app-name"  # change this to a unique name
+app = "nicegui-minimal"  # change this to a unique name
 primary_region = "sjc"
 
 [build]
