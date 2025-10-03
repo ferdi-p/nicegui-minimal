@@ -7,11 +7,13 @@ primary_region = "sjc"
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_start_machines = true
-  auto_stop_machines = "off"
-  min_machines_running = 1
+
+  auto_start_machines = true     # wake up on first request
+  auto_stop_machines = "stop"    # allow machines to shut down
+  min_machines_running = 0       # nothing runs when idle
 
   [http_service.concurrency]
     type = "requests"
     soft_limit = 10
     hard_limit = 15
+
